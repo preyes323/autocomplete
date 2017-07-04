@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Autocomplete!</title>
+    <link rel="stylesheet" href="/stylesheets/normalize.css">
+    <link rel="stylesheet" href="/stylesheets/autocomplete.css">
+    <script src="/javascripts/debounce.js"></script>
+    <script src="/javascripts/autocomplete.js"></script>
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        var input = document.querySelector('input');
+        var autocomplete = new Autocomplete(input, "/countries?matching=");
+      });
+    </script>
+  </head>
+  <body>
+    <div class="app">
+      <p>
+        <input name="country">
+      </p>
+    </div>
+  </body>
+</html>
