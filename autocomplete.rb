@@ -1,9 +1,9 @@
 require 'bundler/setup'
 require 'sinatra'
-require 'sinatra/reloader'
+require 'sinatra/reloader' if development?
 require 'sinatra/json'
 require 'json'
-require 'pry'
+require 'pry' if development?
 
 COUNTRIES_PATH = File.expand_path('../data/countries.json', __FILE__)
 
