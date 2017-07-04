@@ -9,3 +9,7 @@ gem 'minitest'
 group :development do
   gem 'pry'
 end
+
+group :production do
+  gem "puma"
+end

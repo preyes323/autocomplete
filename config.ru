@@ -1,2 +1,2 @@
-require './autocomplete.rb'
+require "./autocomplete.rb"
 run Sinatra::Application
